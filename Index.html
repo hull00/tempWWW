@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/mycss.css" rel="stylesheet">
+
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div id="logo" class="navbar-header">
+
+				<a class="navbar-brand" href="#"><img alt=""
+					src="http://placehold.it/100x50"></a>
+
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Strona główna</a></li>
+					<li><a href="Oferta.html">Oferta</a></li>
+					<li><a href="Kontakt.html">Kontakt</a></li>
+				</ul>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="row" id="changeDiv">
+			<div class="col-md-3 text-center">
+				<button class="btn btn-info">Zapytaj o ofertę</button>
+				<br /> <br />
+				<button class="btn btn-success">Umów się agentem</button>
+			</div>
+			<div class="col-md-9 text-center">
+				<p style="color: white; font-size: 24px;">
+					<strong>Potrzebujesz najlepszej oferty dostosowanej do
+						Twoich potrzeb?</strong>
+				</p>
+				<p style="color: white; font-size: 20px;">(Grafikę oczywiście się zmieni)</p>
+			</div>
+
+
+		</div>
+
+
+		<div class="row">
+			<h2 class="page-header">Współpracujemy tylko z najlepszymi</h2>
+			<div class="container-fluid">
+
+				<ul id="insurance_list" class="list-inline">
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+					<li><img alt="" src="http://placehold.it/150x150"></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		setInterval(function() {
+			var urlSource = ['http://hdcomputerwallpaper.com/wp-content/uploads/2014/01/couple-kissing-blur-effect-photography.jpg', 'http://kamalgmbh.com/portals/0/skins/kamal/assets/img/main/lifeInsurance.jpg'];
+			
+			var randomNumber = Math.floor((Math.random() * 2) + 1);
+			
+			
+			$('#changeDiv').animate({opacity: 0}, 'slow', function() {
+		        $(this)
+	            .css({'background-image': 'url('+ urlSource[Math.floor(Math.random() * urlSource.length)] +')'})
+	            .animate({opacity: 1});
+	    });
+		}, 3000);
+	</script>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

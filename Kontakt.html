@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/mycss.css" rel="stylesheet">
+
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div id="logo" class="navbar-header">
+
+				<a class="navbar-brand" href="#"><img alt=""
+					src="http://placehold.it/100x50"></a>
+
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="Index.html">Strona główna</a></li>
+					<li><a href="Oferta.html">Oferta</a></li>
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<h1 class="page-header">
+			Kontakt z <strong style="color: navy;">Centrum Ubezpieczeń</strong>
+		</h1>
+
+		<div class="row" id="infoDiv">
+			<div class="col-md-3">
+				<h4 class="page-header">Oddział w Białymstoku</h4>
+				<p>Adres</p>
+				<p>Telefon</p>
+				<p>E-mail</p><br/>
+				
+				<h4 class="page-header">Oddział w Łapach</h4>
+				<p>Adres</p>
+				<p>Telefon</p>
+				<p>E-mail</p>
+			</div>
+			<div class="col-md-9" id="contactDiv">
+				<h3 class="page-header" style="color: white;">Napisz do nas wiadomość</h3>
+				
+				<input type="text" name="phone" id="phone" class="validate[required]" placeholder="Imię i nazwisko">
+				<input type="text" name="phone" id="phone" class="validate[required]" placeholder="E-mail">
+				<input type="text" name="phone" id="phone" class="validate[required]" placeholder="Telefon">
+				<input type="text" name="phone" id="phone" class="validate[required]" placeholder="Firma (opcjonalnie)">
+				<textarea id="message" name="message" placeholder="Wiadomość"></textarea>
+				<button class="btn btn-success pull-right">Wyślij wiadomość</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
